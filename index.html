@@ -46,15 +46,16 @@
                     <span class="done-{{item.done}}">{{item.name}} - <em>{{item.position}}</em></span>
                 </li>
             </ul>
-            <button class="clear-btn" ng-click="clearCompleted()">Clear</button>
+            <button ng-click="clearCompleted()">Clear</button>
         </div>
-        <div ng-controller="factoryController" class='large-3 middle-2 cell'>
+        <!-- <div ng-controller="factoryController" class='large-3 middle-2 cell'>
             <h3>Factory</h3>
             <li ng-repeat="item in response">
                 {{response}}
             </li>
-        </div>
+        </div> -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="index.js"></script>
 </body>
 

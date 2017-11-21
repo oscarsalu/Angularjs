@@ -18,7 +18,7 @@ function ctrlFunc($scope) {
         return $scope.list.length;
     };
     $scope.clearCompleted = function() {
-        $scope.list = $scope.list.filter($scope.list, function(item) {
+        $scope.list = _.filter($scope.list, function(item) {
             return !item.done;
         });
     };
